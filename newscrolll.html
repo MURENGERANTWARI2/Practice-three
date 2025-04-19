@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fly-in {
+  position: relative;
+  bottom: -100px; 
+  opacity: 0;
+  animation: fly 1.5s ease-out forwards; 
+  background-color: lightblue;
+  width: 200px; 
+  padding: 20px; 
+        }
+@keyframes fly {
+  0% {
+    bottom: -80px;
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+  <div class="fly-in">
+  </div>
+
+</body>
+</html>
